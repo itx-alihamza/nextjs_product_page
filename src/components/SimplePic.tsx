@@ -16,6 +16,7 @@ const SimplePic = ({ className, src, alt = 'img' }: Props) => {
             loading='lazy'
             height={400}
             width={400}
+            unoptimized
         />
     )
 }

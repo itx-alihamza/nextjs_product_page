@@ -40,44 +40,49 @@ const Carousal = ({ className, onDotsData }: Props) => {
                     <div className="embla__slide">
                         <div className="relative w-full h-full">
                             <Image
-                                src='/assets/carouPicDes.png'
+                                src='/images/carouPicDes.png'
                                 alt='productPics'
                                 fill
                                 className='object-cover'
                                 sizes="100vw"
+                                unoptimized
+
                             />
                         </div>
                     </div>
                     <div className="embla__slide">
                         <div className="relative w-full h-full">
                             <Image
-                                src='/assets/sec_3_bg_des.png'
+                                src='/images/sec_3_bg_des.png'
                                 alt='productPics'
                                 fill
                                 className='object-cover'
                                 sizes="100vw"
+                                unoptimized
                             />
                         </div>
                     </div>
                     <div className="embla__slide">
                         <div className="relative w-full h-full">
                             <Image
-                                src='/assets/carouPicDes.png'
+                                src='/images/carouPicDes.png'
                                 alt='productPics'
                                 fill
                                 className='object-cover'
                                 sizes="100vw"
+                                unoptimized
                             />
                         </div>
                     </div>
                     <div className="embla__slide">
                         <div className="relative w-full h-full">
                             <Image
-                                src='/assets/sec_3_bg_des.png'
+                                src='/images/sec_3_bg_des.png'
                                 alt='productPics'
                                 fill
                                 className='object-cover'
                                 sizes="100vw"
+                                unoptimized
                             />
                         </div>
                     </div>
@@ -92,7 +97,8 @@ const Carousal = ({ className, onDotsData }: Props) => {
                     width={400}
                     height={400}
                     alt='prev'
-                    src={'/assets/carouLeft.png'}
+                    src={'/images/carouLeft.png'}
+                    unoptimized
                 />
             </button>
             {/* ✅ FIXED: Next button with correct class name and positioning */}
@@ -105,7 +111,8 @@ const Carousal = ({ className, onDotsData }: Props) => {
                     width={400}
                     height={400}
                     alt='next'
-                    src={'/assets/carouRight.png'}
+                    src={'/images/carouRight.png'}
+                    unoptimized
                 />
             </button>
         </div>

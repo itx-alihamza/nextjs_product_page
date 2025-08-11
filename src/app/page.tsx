@@ -20,8 +20,8 @@ export default function Home() {
         <Picture
           classes="w-full overflow-hidden h-[75%] sm:h-full"
           imgClasses="w-[120vw] h-[60vh] sm:h-full sm:w-full object-cover object-center"
-          mobPic="/assets/firSecMob.png"
-          desPic="/assets/firSecPic.png"
+          mobPic="/images/firSecMob.png"
+          desPic="/images/firSecPic.png"
         />
         <div className="sm:absolute w-full sm:w-auto h-[25%] flex flex-col gap-4 justify-center items-center top-1/2 left-20 sm:left-25 md:left-30 lg:40 sm:-translate-y-1/2 z-20 text-4xl text-white">
           <div className="flex flex-col gap-4" style={
@@ -38,7 +38,7 @@ export default function Home() {
           </button>
         </div>
       </section>
-      <section className="flex flex-col bg-[url(/assets/sec_2_bg.png)] gap-4 lg:gap-0 pt-4 sm:py-12 sm:px-6 md:px-12 items-center min-w-screen min-h-screen overflow-x-hidden"
+      <section className="flex flex-col bg-[url(/images/sec_2_bg.png)] gap-4 lg:gap-0 pt-4 sm:py-12 sm:px-6 md:px-12 items-center min-w-screen min-h-screen overflow-x-hidden"
         style={
           { fontSize: 'clamp(1rem, 2.5vw + 1rem, 16rem' }
         }
@@ -55,8 +55,8 @@ export default function Home() {
           <Picture
             classes="h-[350px] md:min-w-[350px] md:h-[400px] lg:min-w-110 lg:h-130  mt-4 mb-2 md:my-2 lg:my-0 lg:mt-0 lg:mb-0"
             imgClasses="w-full h-full"
-            mobPic="/assets/helmentMobi.png"
-            desPic="/assets/helmentWind.png"
+            mobPic="/images/helmentMobi.png"
+            desPic="/images/helmentWind.png"
           />
           <div className="text-black flex flex-col gap-4 justify-center text-center md:text-left lg:pr-24">
             <p className="font-extrabold responsive-heading">Ride Smarter. Ride Safer.</p>
@@ -65,13 +65,13 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className={`flex flex-col justify-center items-center bg-[url(/assets/sec_3_bg.png)] lg:bg-[url(/assets/sec_3_bg_des.png)] bg-cover bg-center min-w-screen min-h-screen lg:min-h-[45vh] py-12 md:px-6 lg:px-0 lg:pb-24`}>
+      <section className={`flex flex-col justify-center items-center bg-[url(/images/sec_3_bg.png)] lg:bg-[url(/images/sec_3_bg_des.png)] bg-cover bg-center min-w-screen min-h-screen lg:min-h-[45vh] py-12 md:px-6 lg:px-0 lg:pb-24`}>
         <h1 className="font-extrabold responsive-heading text-white text-center mb-12">Features</h1>
         <div className="flex flex-col md:flex-row md:flex-wrap  gap-8 md:gap-14 lg:gap-10 justify-center items-center flex-1">
-          <SimplePic className="w-60 sm:w-70  h-60 sm:h-70 " src="/assets/fea_1.png" />
-          <SimplePic className="w-60 sm:w-70  h-60 sm:h-70 " src="/assets/fea_2.png" />
-          <SimplePic className="w-60 sm:w-70  h-60 sm:h-70 " src="/assets/fea_3.png" />
-          <SimplePic className="w-60 sm:w-70  h-60 sm:h-70 " src="/assets/fea_4.png" />
+          <SimplePic className="w-60 sm:w-70  h-60 sm:h-70 " src="/images/fea_1.png" />
+          <SimplePic className="w-60 sm:w-70  h-60 sm:h-70 " src="/images/fea_2.png" />
+          <SimplePic className="w-60 sm:w-70  h-60 sm:h-70 " src="/images/fea_3.png" />
+          <SimplePic className="w-60 sm:w-70  h-60 sm:h-70 " src="/images/fea_4.png" />
         </div>
       </section>
       <section className="flex justify-center items-center text-center bg-white max-w-screen max-h-[114px] py-14">
@@ -80,7 +80,7 @@ export default function Home() {
       <section className="min-w-screen h-[250px] sm:h-[300px] md:h-[450px] lg:h-[600px] xl:h-[700]">
         <Carousal onDotsData={setDotsData} />
       </section>
-      <section className="flex flex-col justify-center items-center bg-[url(/assets/sec_5_bg.png)] text-center bg-white max-w-screen min-h-[114px] px-10 pb-14">
+      <section className="flex flex-col justify-center items-center bg-[url(/images/sec_5_bg.png)] text-center bg-white max-w-screen min-h-[114px] px-10 pb-14">
         {dotsData && (
           <div className="embla__dots min-w-[200px] min-h-[50px] flex gap-4 my-2 justify-center items-center">
             {dotsData.scrollSnaps.map((_, index) => (
@@ -100,12 +100,12 @@ export default function Home() {
             <p className="font-light text-center responsive-body">From delivery riders to traffic officers, NOVA is redefining what it means to ride responsibly. Whether it’s the brain-signal ignition lock or the ECE-certified impact protection, people trust NOVA to keep them safe on every ride.</p>
           </div>
 
-          <div className="relative min-h-[250px] flex flex-col gap-2 justify-end items-center mt-30 px-6 md:px-15 lg:px-20 xl:px-40 py-8 text-white rounded-2xl bg-[url(/assets/sec_5_inbg.png)]">
+          <div className="relative min-h-[250px] flex flex-col gap-2 justify-end items-center mt-30 px-6 md:px-15 lg:px-20 xl:px-40 py-8 text-white rounded-2xl bg-[url(/images/sec_5_inbg.png)]">
             <Picture
               classes="absolute w-[clamp(200px,3vw+30px,400px)] h-[clamp(200px,3vw+30px,400px)] left-1/2 top-0 -translate-y-1/2 -translate-x-1/2 "
               imgClasses="w-full h-full"
-              mobPic="/assets/sec_5_person_mb.png"
-              desPic="/assets/sec_5_person_ds.png"
+              mobPic="/images/sec_5_person_mb.png"
+              desPic="/images/sec_5_person_ds.png"
             />
             <p className="responsive-body">“It’s not just a helmet — it’s a commitment to safety. I finally feel like I’m protected and connected.”</p>
             <div className="w-full flex md:justify-end justify-center">

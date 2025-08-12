@@ -100,7 +100,7 @@ export default function Home() {
             <p className="font-light text-center responsive-body">From delivery riders to traffic officers, NOVA is redefining what it means to ride responsibly. Whether it’s the brain-signal ignition lock or the ECE-certified impact protection, people trust NOVA to keep them safe on every ride.</p>
           </div>
 
-          <div className="relative min-h-[250px] flex flex-col gap-2 justify-end items-center mt-30 px-6 md:px-15 lg:px-20 xl:px-40 py-8 text-white rounded-2xl bg-[url(/assets/sec_5_inbg.png)]">
+          <div className="relative min-h-[250px] flex flex-col gap-2 justify-end items-center mt-30 px-6 md:px-15 lg:px-20 xl:px-40 py-8 text-white rounded-2xl bg-[url(/assets/sec_5_inbg.png)] bg-cover bg-center">
             <Picture
               classes="absolute w-[clamp(200px,3vw+30px,400px)] h-[clamp(200px,3vw+30px,400px)] left-1/2 top-0 -translate-y-1/2 -translate-x-1/2 "
               imgClasses="w-full h-full"

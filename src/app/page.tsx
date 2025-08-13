@@ -6,6 +6,7 @@ import SimplePic from "@/components/SimplePic";
 import { DotButton } from "@/components/EmblaCarouselDotButton";
 import { useState } from "react";
 import './page.css'
+import Header from "@/components/Header";
 
 export default function Home() {
   const [dotsData, setDotsData] = useState<{ selectedIndex: number; scrollSnaps: number[]; onDotButtonClick: (index: number) => void } | null>(null);
@@ -16,6 +17,10 @@ export default function Home() {
 
   return (
     <div className=" flex flex-col bg-[#3B3844] min-w-screen min-h-screen ">
+      {/* Header */}
+      <header>
+
+      </header>
       <section className="relative flex flex-col min-w-screen h-[80vh] sm:min-h-screen">
         <Picture
           classes="w-full overflow-hidden h-[75%] sm:h-full"
@@ -77,6 +82,7 @@ export default function Home() {
       <section className="flex justify-center items-center text-center bg-white max-w-screen max-h-[114px] py-14">
         <h1 className="font-extrabold w-[80%] text-[clamp(2rem,3vw+1rem,2.5rem)]/12 md:text-[clamp(2rem,3vw+1rem,2.5rem)]/14">Colors Truly Matters - And We Know It!</h1>
       </section>
+      {/* Carousal */}
       <section className="min-w-screen h-[250px] sm:h-[300px] md:h-[450px] lg:h-[600px] xl:h-[700]">
         <Carousal onDotsData={setDotsData} />
       </section>

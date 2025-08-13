@@ -13,6 +13,8 @@ const Carousal = ({ className, onDotsData }: Props) => {
     const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true })
     const { selectedIndex, scrollSnaps, onDotButtonClick } = useDotButton(emblaApi)
 
+    const carousalPics = ['/images/carouPicDes.png', '/images/sec_3_bg_des.png', '/images/carouPicDes.png', '/images/sec_3_bg_des.png']
+
     //Next/Prev buttons
     const scrollPrev = useCallback(() => {
         if (emblaApi) emblaApi.scrollPrev()
@@ -37,6 +39,7 @@ const Carousal = ({ className, onDotsData }: Props) => {
         <div className="embla relative w-full h-full">
             <div className="embla__viewport" ref={emblaRef}>
                 <div className="embla__container">
+<<<<<<< Updated upstream
                     <div className="embla__slide">
                         <div className="relative w-full h-full">
                             <Image
@@ -81,6 +84,22 @@ const Carousal = ({ className, onDotsData }: Props) => {
                             />
                         </div>
                     </div>
+=======
+                    {carousalPics.map((items: string, i: number) => (
+                        <div key={i} className="embla__slide">
+                            <div className="relative w-full h-full">
+                                <Image
+                                    src={items}
+                                    alt='productPics'
+                                    fill
+                                    className='object-cover'
+                                    sizes="100vw"
+                                    unoptimized
+                                />
+                            </div>
+                        </div>
+                    ))}
+>>>>>>> Stashed changes
                 </div>
             </div>
             <button

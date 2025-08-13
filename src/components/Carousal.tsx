@@ -39,52 +39,6 @@ const Carousal = ({ className, onDotsData }: Props) => {
         <div className="embla relative w-full h-full">
             <div className="embla__viewport" ref={emblaRef}>
                 <div className="embla__container">
-<<<<<<< Updated upstream
-                    <div className="embla__slide">
-                        <div className="relative w-full h-full">
-                            <Image
-                                src='/assets/carouPicDes.png'
-                                alt='productPics'
-                                fill
-                                className='object-cover'
-                                sizes="100vw"
-                            />
-                        </div>
-                    </div>
-                    <div className="embla__slide">
-                        <div className="relative w-full h-full">
-                            <Image
-                                src='/assets/sec_3_bg_des.png'
-                                alt='productPics'
-                                fill
-                                className='object-cover'
-                                sizes="100vw"
-                            />
-                        </div>
-                    </div>
-                    <div className="embla__slide">
-                        <div className="relative w-full h-full">
-                            <Image
-                                src='/assets/carouPicDes.png'
-                                alt='productPics'
-                                fill
-                                className='object-cover'
-                                sizes="100vw"
-                            />
-                        </div>
-                    </div>
-                    <div className="embla__slide">
-                        <div className="relative w-full h-full">
-                            <Image
-                                src='/assets/sec_3_bg_des.png'
-                                alt='productPics'
-                                fill
-                                className='object-cover'
-                                sizes="100vw"
-                            />
-                        </div>
-                    </div>
-=======
                     {carousalPics.map((items: string, i: number) => (
                         <div key={i} className="embla__slide">
                             <div className="relative w-full h-full">
@@ -99,7 +53,6 @@ const Carousal = ({ className, onDotsData }: Props) => {
                             </div>
                         </div>
                     ))}
->>>>>>> Stashed changes
                 </div>
             </div>
             <button

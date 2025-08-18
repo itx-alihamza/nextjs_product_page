@@ -64,7 +64,7 @@ const Carousal = ({ className, onDotsData }: Props) => {
                     width={400}
                     height={400}
                     alt='prev'
-                    src={'/assets/carouLeft.png'}
+                    src={'/images/carouLeft.png'}
                 />
             </button>
             {/* ✅ FIXED: Next button with correct class name and positioning */}
@@ -77,7 +77,7 @@ const Carousal = ({ className, onDotsData }: Props) => {
                     width={400}
                     height={400}
                     alt='next'
-                    src={'/assets/carouRight.png'}
+                    src={'/images/carouRight.png'}
                 />
             </button>
         </div>
